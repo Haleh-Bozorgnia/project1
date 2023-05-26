@@ -38,4 +38,4 @@ Search book by name and load the title of book, author name,ebook access, title,
 | 2   | Make API call           |
 | 3   | Render data to the page |
 | 4   | Add user interactivity  |
-| 5   | Styling                 |
+| 5   |                         |
