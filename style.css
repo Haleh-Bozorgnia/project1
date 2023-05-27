@@ -1,7 +1,22 @@
 .head{
     color: blue;
 }
-#result{
+.result{
     background-color: pink;
-    height: 900px;
+    display: grid;
+    width:850px;
+    grid-template-columns: 60% 40%;
+  
+}
+.result > h5{
+    grid-column: 1/2;
+}
+.result > img{
+    grid-column: 2/3;
+    border: solid red 5px;
+    margin:10px
+
+}
+.result div{
+    margin: 10px;
 }
