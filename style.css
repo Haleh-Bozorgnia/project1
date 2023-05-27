@@ -1,3 +1,7 @@
 .head{
     color: blue;
 }
+#result{
+    background-color: pink;
+    height: 900px;
+}
