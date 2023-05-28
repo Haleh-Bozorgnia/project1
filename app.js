@@ -33,7 +33,9 @@ $searchForm.on("submit", (event) => {
       //print all the neccessory field
       console.log(arr[i].title);
       const div = $("<div>");
-      console.log(arr[i].author_name);
+      div.addClass("result-container");
+
+      console.log(arr[i].author_name[0]);
       console.log(arr[i].first_publish_year);
       console.log(arr[i].ebook_access);
       console.log(arr[i].author_key[0]);
@@ -44,15 +46,9 @@ $searchForm.on("submit", (event) => {
       const img = $("<img />", {
         src: `https://covers.openlibrary.org/a/olid/${imagename}-M.jpg`,
       });
-      //show and append the result on screen
-      // div.html(`<h5>Book Name: ${arr[i].title}</h5>
-      //           <h5>Author Name: ${arr[i].author_name}</h5>
-      //           <h5>First pblish Year: ${arr[i].first_publish_year}</h5>
-      //           <h5>Ebook Access: ${arr[i].ebook_access}</h> 
-             
-      // `);
+     
         div.html(`<div>Book Name: ${arr[i].title}</div>
-                <div>Author Name: ${arr[i].author_name}</div>
+                <div>Author Name: ${arr[i].author_name[0]}</div>
                 <div>First pblish Year: ${arr[i].first_publish_year}</div>
                 <div>Ebook Access: ${arr[i].ebook_access}</div> 
                 <br>             
