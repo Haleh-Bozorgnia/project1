@@ -19,21 +19,24 @@
     <script src="./app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="head">
       <h1>Book Finder</h1>
     </div>
-
+    <div class="search-form">
+        <form class="search">
+        <input
+            id="search-input"
+            type="inpute"
+            name="bookTitle"
+            placeholder="book title"
+        />
+        <input id="search-btn" type="submit" value="Find Book" />
+        </form>
+    </div>
     <div class="result"></div>
 
-    <form class="search">
-      <input
-        id="search-input"
-        type="inpute"
-        name="bookTitle"
-        placeholder="book title"
-      />
-      <input id="search-btn" type="submit" value="Find Book" />
-    </form>
+    
   </body>
 </html>

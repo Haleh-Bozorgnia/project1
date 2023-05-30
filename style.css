@@ -8,23 +8,23 @@ body {
   margin: 40px 50px;
 }
 
-/* setting for the title */
+ /* setting for the title */
 h1 {
   color: rgb(109, 105, 105);
   font-size: 50px;
   text-align: center;
-  top: 70%;
+  top:70%;
   position: relative;
 }
-/* setting for header image */
+ /* setting for header image */
 .head {
-  background: url("./images/back-pic.jpg"),
-    linear-gradient(to top, rgb(250, 198, 206), rgb(176, 173, 173));
+  background: url("./images/back-pic.jpg"),linear-gradient(to top,rgb(250, 198, 206),rgb(176, 173, 173));
   height: 400px;
   background-position: center;
-  background-size: contain;
+  background-size:contain;
   background-repeat: no-repeat;
   position: relative;
+ 
 }
 .head img {
   max-width: 100%;
@@ -43,7 +43,7 @@ h1 {
 .result > h5 {
   grid-column: 1/2;
 }
-/* setting for image of output */
+ /* setting for image */
 .result > img {
   grid-column: 2/3;
   border: solid rgb(149, 147, 147) 5px;
@@ -57,7 +57,6 @@ h1 {
 .result-container {
   box-shadow: 2px 5px 8px #888;
 }
-/* setting for search section */
 .search {
   display: flex;
   justify-content: center;
@@ -69,4 +68,28 @@ h1 {
   margin: 20px;
   padding: 10px;
   box-shadow: 2px 5px 8px #888;
+}
+@media screen and (max-width: 500px){
+    
+.search, .head{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 30px;
+}
+.head{
+    min-width: 450px;
+}
+.result{
+    grid-template-columns: 90%;
+}
+.result > img{
+  grid-column: 1/2;
+  min-width: 250px;
+  max-width: 300px;
+}
+.result div,#search-btn, #search-input{
+ min-width: 250px;
+  max-width: 300px;}
 }

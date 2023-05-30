@@ -16,6 +16,13 @@ $.ajax(url).then((response) => {
   console.log(response.docs[0]);
 });
 ```
+### Technologies Used
+* HTML5
+* CSS
+* JavaScript
+* JQuery
+* OpenLibrary API
+
 
 ### API description
 
@@ -35,8 +42,7 @@ Finding the suitable API
 | --- | ----------------------- |
 | 1   | Setup Basic Project     |
 | 2   | Find API Make API call  |
-| 3   | Make API call &         |
-|     | Render data to the page |
+| 3   | Make API call & Render data to the page |
 | 4   | Add user interactivity  |
 | 5   | Design                  |
 | 6   | Edit readme file        |

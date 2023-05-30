@@ -42,19 +42,23 @@ $searchForm.on("submit", (event) => {
       //define the variable to access the author key
 
       const imagename = arr[i].author_key[0];
-      //define the variable fir image of author
-      const img = $("<img />", {
-        src: `https://covers.openlibrary.org/a/olid/${imagename}-M.jpg`,
-      });
+      //define the variable for image of author
+      // const img = $("<img />", {
+      //   src: `https://covers.openlibrary.org/a/olid/${imagename}-M.jpg`,
+      // });
+      const img = $("<img />").attr("src",
+        `https://covers.openlibrary.org/a/olid/${imagename}-M.jpg`);
+     
+     
      
         div.html(`<div>Book Name: ${arr[i].title}</div>
                 <div>Author Name: ${arr[i].author_name[0]}</div>
                 <div>First pblish Year: ${arr[i].first_publish_year}</div>
                 <div>Ebook Access: ${arr[i].ebook_access}</div> 
-                <br>             
+                <br>  
       `);
 
-      $resultDiv.append(div, img);
+      $resultDiv.append(div,img);
 
     }
   });
