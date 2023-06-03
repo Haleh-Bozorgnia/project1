@@ -16,13 +16,14 @@ $.ajax(url).then((response) => {
   console.log(response.docs[0]);
 });
 ```
-### Technologies Used
-* HTML5
-* CSS
-* JavaScript
-* JQuery
-* OpenLibrary API
 
+### Technologies Used
+
+- HTML5
+- CSS
+- JavaScript
+- JQuery
+- OpenLibrary API
 
 ### API description
 
@@ -34,19 +35,18 @@ Search book with the word and return all books that contain that word in their t
 
 ### Details about Difficulties
 
-* Finding the suitable API
-* Loading images
+- Finding the suitable API
+- Loading images
 
 ### Daily Schedule
 
-| Day | Task                    |
-| --- | ----------------------- |
-| 1   | Setup Basic Project     |
-| 2   | Find API Make API call  |
-| 3   | Make API call & Render data to the page |
-| 4   | Add user interactivity  |
-| 5   | Design                  |
-| 6   | Edit readme file        |
-| 7   | Make responsive         |
-| 8   | work on loading images         |
-
+| Day | Task                               |
+| --- | ---------------------------------- |
+| 1   | Basic Setup                        |
+| 2   | Find API                           |
+| 3   | Call API & Render data to the page |
+| 4   | Add user interactivity             |
+| 5   | Design                             |
+| 6   | Edit readme file                   |
+| 7   | Do responsive web design           |
+| 8   | Work on loading images             |
