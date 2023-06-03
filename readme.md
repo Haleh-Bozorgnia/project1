@@ -26,7 +26,7 @@ $.ajax(url).then((response) => {
 
 ### API description
 
-Search book with the world and return all books that contain that word in their title
+Search book with the word and return all books that contain that word in their titles
 
 ### Mockup
 
@@ -34,7 +34,8 @@ Search book with the world and return all books that contain that word in their 
 
 ### Details about Difficulties
 
-Finding the suitable API
+* Finding the suitable API
+* Loading images
 
 ### Daily Schedule
 
@@ -47,3 +48,5 @@ Finding the suitable API
 | 5   | Design                  |
 | 6   | Edit readme file        |
 | 7   | Make responsive         |
+| 8   | work on loading images         |
+

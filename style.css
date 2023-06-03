@@ -3,63 +3,70 @@
   margin: 0;
   padding: 0;
 }
+/* settings for body  */
 body {
   background-color: rgb(245, 198, 205);
   margin: 40px 50px;
 }
 
- /* setting for the title */
+/* settings for the title */
 h1 {
   color: rgb(109, 105, 105);
   font-size: 50px;
   text-align: center;
-  top:70%;
+  top: 70%;
   position: relative;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Pattaya", sans-serif;
 }
- /* setting for header image */
+/* settings for header and it's image  */
 .head {
-  background: url("./images/back-pic.jpg"),linear-gradient(to top,rgb(250, 198, 206),rgb(176, 173, 173));
+  background: url("./images/back-pic.jpg"),
+    linear-gradient(to top, rgb(250, 198, 206), rgb(176, 173, 173));
   height: 400px;
   background-position: center;
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
- 
 }
 .head img {
   max-width: 100%;
-  /* height: auto%; */
 }
 /* setting for output */
 .result {
   display: grid;
-  /* width:850px; */
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 40% 40%;
   color: rgb(55, 53, 53);
+  justify-content: center;
 }
 #container {
-  margin-left: 10px;
+  margin: 10px;
 }
+/* setting for header */
 .result > h5 {
   grid-column: 1/2;
 }
- /* setting for image */
+/* setting for image of output*/
 .result > img {
   grid-column: 2/3;
   border: solid rgb(149, 147, 147) 5px;
   margin: 10px;
   box-shadow: 2px 5px 8px #888;
   border-radius: 4px;
+  min-width: 190px;
 }
 .result div {
   margin: 10px;
+  grid-column: 1/2;
 }
 .result-container {
   box-shadow: 2px 5px 8px #888;
 }
-.search {
+/* settings for form */
+.search-form {
   display: flex;
   justify-content: center;
+  height: 200px;
 }
 #search-btn,
 #search-input {
@@ -69,27 +76,47 @@ h1 {
   padding: 10px;
   box-shadow: 2px 5px 8px #888;
 }
-@media screen and (max-width: 500px){
-    
-.search, .head{
+#search-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* make the page responsive  */
+@media screen and (max-width: 500px) {
+  /* .search, */
+  .head,
+  .search-form,
+  .search {
     display: flex;
     flex-direction: column;
-}
-h1{
+    justify-items: center;
+  }
+
+  h1 {
     font-size: 30px;
-}
-.head{
+  }
+  .head {
     min-width: 450px;
-}
-.result{
-    grid-template-columns: 90%;
-}
-.result > img{
-  grid-column: 1/2;
-  min-width: 250px;
-  max-width: 300px;
-}
-.result div,#search-btn, #search-input{
- min-width: 250px;
-  max-width: 300px;}
+  }
+  .result {
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+  }
+  .result > img {
+    grid-column: 1/2;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 5px auto;
+  }
+  .result div,
+  #search-btn,
+  #search-input {
+    min-width: 250px;
+    max-width: 300px;
+  }
+  #search-btn,
+  #search-input {
+    margin: 5px auto;
+  }
 }
