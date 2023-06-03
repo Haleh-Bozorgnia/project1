@@ -35,9 +35,9 @@ h1 {
 /* setting for output */
 .result {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 25% 25% 25% 25%;
   color: rgb(55, 53, 53);
-  justify-content: center;
+  /* justify-content: center; */
 }
 #container {
   margin: 10px;
@@ -47,8 +47,8 @@ h1 {
   grid-column: 1/2;
 }
 /* setting for image of output*/
-.result > img {
-  grid-column: 2/3;
+.result  img {
+  grid-column: 3/4;
   border: solid rgb(149, 147, 147) 5px;
   margin: 10px;
   box-shadow: 2px 5px 8px #888;
@@ -56,11 +56,13 @@ h1 {
   min-width: 190px;
 }
 .result div {
-  margin: 10px;
-  grid-column: 1/2;
+  margin: 15px;
+  /* grid-column: 1/2; */
 }
 .result-container {
   box-shadow: 2px 5px 8px #888;
+    grid-column: 2/3;
+
 }
 /* settings for form */
 .search-form {
@@ -98,22 +100,27 @@ h1 {
   .head {
     min-width: 450px;
   }
-  .result {
-    display: grid;
-    grid-template-columns: 100%;
-    place-items: center;
+  .result div, .result  img{
+    /* grid-template-columns: 100%; */
+    /* place-items: center; */
+    grid-column: 1/5;
+    min-width: 300px;
+    max-width: 350px;
+    /* margin: 5px auto; */
+    padding: 5px;
   }
-  .result > img {
-    grid-column: 1/2;
+  
+  /* .result  img {
+    grid-column: 1/5;
     min-width: 250px;
     max-width: 300px;
     margin: 5px auto;
-  }
-  .result div,
+  } */
   #search-btn,
   #search-input {
     min-width: 250px;
     max-width: 300px;
+    
   }
   #search-btn,
   #search-input {
